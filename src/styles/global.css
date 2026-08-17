@@ -50,3 +50,8 @@ body {
   color: var(--color-ink);
   font-family: var(--font-body);
 }
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}

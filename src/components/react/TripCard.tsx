@@ -10,7 +10,7 @@ export default function TripCard({ trip }: { trip: Trip }) {
   const urgent = slotsLeft <= 3;
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-card bg-canvas shadow-sm">
+    <div className="flex flex-col overflow-hidden rounded-card border border-ink/12 bg-canvas">
       <div className="relative">
         <img
           src={trip.images[0]}
@@ -31,7 +31,7 @@ export default function TripCard({ trip }: { trip: Trip }) {
 
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-display text-base font-extrabold leading-snug text-ink">{trip.title}</h3>
-        <p className="mt-1 text-sm text-mute">
+        <p className="mt-1 text-sm text-body">
           {formatDateRange(trip.dateStart, trip.dateEnd)} ({trip.durationLabel})
         </p>
 
@@ -51,7 +51,7 @@ export default function TripCard({ trip }: { trip: Trip }) {
         </div>
 
         <div className="mt-4">
-          <div className="flex items-center justify-between text-xs font-semibold text-mute">
+          <div className="flex items-center justify-between text-xs font-semibold text-body">
             <span>
               Slot terisi {trip.slotFilled} dari {trip.slotTotal}
             </span>
@@ -81,7 +81,7 @@ export default function TripCard({ trip }: { trip: Trip }) {
           </a>
         </div>
 
-        <p className="mt-3 text-xs text-mute">{trip.priceExcludes}</p>
+        <p className="mt-3 text-xs text-body">{trip.priceExcludes}</p>
       </div>
     </div>
   );

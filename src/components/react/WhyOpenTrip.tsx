@@ -1,4 +1,4 @@
-import Reveal from "./Reveal";
+import { motion, useReducedMotion } from "framer-motion";
 
 const REASONS = [
   {
@@ -24,19 +24,32 @@ const REASONS = [
 ];
 
 export default function WhyOpenTrip() {
+  const reduce = useReducedMotion();
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <h2 className="font-display text-2xl font-extrabold tracking-tight text-ink md:text-3xl">
         Kenapa Pilih Open Trip Dibanding Liburan Sendiri?
       </h2>
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-2">
+      <div className="mt-10 divide-y divide-black/8 border-t border-black/8">
         {REASONS.map((r, i) => (
-          <Reveal key={r.title} index={i} className="rounded-card bg-canvas p-6 shadow-sm">
-            <span className="text-3xl" aria-hidden="true">{r.emoji}</span>
-            <h3 className="mt-3 font-display text-base font-extrabold text-ink">{r.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-body">{r.body}</p>
-          </Reveal>
+          <motion.div
+            key={r.title}
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+            className="grid gap-2 py-6 sm:grid-cols-[3rem_1fr] sm:gap-6 sm:py-8"
+          >
+            <span className="text-3xl leading-none" aria-hidden="true">
+              {r.emoji}
+            </span>
+            <div>
+              <h3 className="font-display text-lg font-extrabold text-ink">{r.title}</h3>
+              <p className="mt-1.5 max-w-[55ch] text-sm leading-relaxed text-body">{r.body}</p>
+            </div>
+          </motion.div>
         ))}
       </div>
     </section>

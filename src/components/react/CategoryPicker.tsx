@@ -3,7 +3,6 @@ import { motion, useReducedMotion } from "framer-motion";
 const CARDS = [
   {
     href: "/nusantara",
-    kicker: "Domestik",
     accent: "var(--color-category-nusantara)",
     title: "Open Trip Nusantara",
     body: "Bromo, Labuan Bajo, sampai spot yang lagi viral di TikTok. Semua di Indonesia, semua deket dari rumah.",
@@ -13,7 +12,6 @@ const CARDS = [
   },
   {
     href: "/global",
-    kicker: "Luar Negeri",
     accent: "var(--color-category-global)",
     title: "Open Trip Global",
     body: "Jepang, Vietnam, Malaysia. Liburan ke luar negeri nggak perlu ribet urus sendiri, apalagi sendirian.",
@@ -42,8 +40,7 @@ export default function CategoryPicker() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
             whileHover={reduce ? undefined : { y: -4 }}
-            className="group block overflow-hidden rounded-card border-t-4 bg-canvas shadow-sm transition-shadow hover:shadow-lg"
-            style={{ borderTopColor: card.accent }}
+            className="group block overflow-hidden rounded-card bg-canvas shadow-sm transition-shadow hover:shadow-lg"
           >
             <div className="overflow-hidden">
               <img
@@ -54,16 +51,12 @@ export default function CategoryPicker() {
               />
             </div>
             <div className="p-6">
-              <span
-                className="text-xs font-bold uppercase tracking-wide"
-                style={{ color: card.accent }}
-              >
-                {card.kicker}
-              </span>
-              <h3 className="mt-1 font-display text-xl font-extrabold text-ink">{card.title}</h3>
+              <h3 className="font-display text-xl font-extrabold text-ink">{card.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-body">{card.body}</p>
-              <span className="mt-4 inline-block text-sm font-semibold text-ink">
-                {card.cta} <span aria-hidden="true">&rarr;</span>
+              <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition-transform group-hover:translate-x-1">
+                <span className="h-2 w-2 rounded-full" style={{ backgroundColor: card.accent }} aria-hidden="true" />
+                <span style={{ color: card.accent }}>{card.cta}</span>
+                <span aria-hidden="true" style={{ color: card.accent }}>&rarr;</span>
               </span>
             </div>
           </motion.a>

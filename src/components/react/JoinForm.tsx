@@ -54,7 +54,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
             name="nama"
             type="text"
             required
-            className="rounded-md border border-black/15 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
+            className="rounded-md border border-ink/25 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
           />
         </div>
 
@@ -68,7 +68,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
             type="tel"
             required
             placeholder="08xx-xxxx-xxxx"
-            className="rounded-md border border-black/15 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
+            className="rounded-md border border-ink/25 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
           />
         </div>
 
@@ -80,7 +80,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
             id="trip"
             name="trip"
             required
-            className="rounded-md border border-black/15 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
+            className="rounded-md border border-ink/25 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
           >
             <option value="">Pilih trip</option>
             {trips.map((t) => (
@@ -102,7 +102,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
             min={1}
             defaultValue={1}
             required
-            className="rounded-md border border-black/15 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
+            className="rounded-md border border-ink/25 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
           />
         </div>
 
@@ -114,7 +114,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
             id="catatan"
             name="catatan"
             rows={3}
-            className="rounded-md border border-black/15 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
+            className="rounded-md border border-ink/25 px-4 py-2.5 text-sm text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
           />
         </div>
 

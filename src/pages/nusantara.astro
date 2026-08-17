@@ -5,7 +5,7 @@ import HeroCategory from "../components/react/HeroCategory";
 import WhyOpenTrip from "../components/react/WhyOpenTrip";
 import TripSchedule from "../components/react/TripSchedule";
 import DestinationGrid from "../components/react/DestinationGrid";
-import Inclusions from "../components/react/Inclusions";
+import Inclusions from "../components/Inclusions.astro";
 import VibeMatching from "../components/react/VibeMatching";
 import ContentAddons from "../components/react/ContentAddons";
 import JoinForm from "../components/react/JoinForm";
@@ -58,7 +58,6 @@ const inclusions = [
   <TripSchedule client:load trips={trips} category="nusantara" />
   <DestinationGrid client:visible heading="Destinasi Favorit Kawan Jalan" destinations={destinations} />
   <Inclusions
-    client:visible
     items={inclusions}
     excludesNote="Tidak termasuk: pengeluaran pribadi, tiket pesawat menuju kota keberangkatan (kecuali disebutkan khusus)"
   />

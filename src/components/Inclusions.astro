@@ -1,0 +1,24 @@
+---
+interface Props {
+  items: string[];
+  excludesNote: string;
+}
+const { items, excludesNote } = Astro.props;
+---
+<section class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+  <h2 class="font-display text-2xl font-extrabold tracking-tight text-ink md:text-3xl">
+    Semua Sudah Termasuk
+  </h2>
+
+  <div class="mt-8 rounded-card bg-canvas p-6 shadow-sm sm:p-8">
+    <ul class="grid gap-3 sm:grid-cols-2">
+      {items.map((item) => (
+        <li class="flex items-start gap-2 text-sm text-body">
+          <span class="mt-0.5 shrink-0 text-positive" aria-hidden="true">✅</span>
+          {item}
+        </li>
+      ))}
+    </ul>
+    <p class="mt-6 border-t border-black/5 pt-4 text-xs italic text-body">{excludesNote}</p>
+  </div>
+</section>
