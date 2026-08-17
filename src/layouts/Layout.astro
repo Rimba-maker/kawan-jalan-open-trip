@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  ogImageAlt: string;
+  active?: "home" | "nusantara" | "global";
+}
+
+const { title, description, keywords, ogImageAlt, active } = Astro.props;
+const ogImage = "https://picsum.photos/seed/kawan-jalan-og/1200/630";
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#e8ebe6" />
+  </head>
+  <body class="min-h-dvh font-body text-ink">
+    <Navbar active={active} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "@fontsource-variable/manrope";
+@import "@fontsource-variable/inter";
+
+@theme {
+  /* Wise-derived brand tokens (see DESIGN.md) */
+  --color-primary: #9fe870;
+  --color-on-primary: #0e0f0c;
+  --color-primary-active: #cdffad;
+  --color-primary-neutral: #c5edab;
+  --color-primary-pale: #e2f6d5;
+
+  --color-ink: #0e0f0c;
+  --color-ink-deep: #163300;
+  --color-body: #454745;
+  --color-mute: #868685;
+
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #e8ebe6;
+
+  --color-positive: #2ead4b;
+  --color-positive-deep: #054d28;
+  --color-warning: #ffd11a;
+  --color-warning-deep: #b86700;
+  --color-negative: #d03238;
+  --color-negative-deep: #a72027;
+  --color-negative-bg: #320707;
+
+  /* Vibe Matching accents (project-specific, tags/badges only) */
+  --color-vibe-chill: #8ba888;
+  --color-vibe-adventure: #d4713f;
+  --color-vibe-content: #e0489a;
+  --color-vibe-party: #8b5fbf;
+  --color-vibe-family: #5b9bd5;
+
+  /* Category-orientation accents (project-specific, kicker/border/highlight only) */
+  --color-category-nusantara: #b85c2e;
+  --color-category-global: #3e6fa8;
+
+  /* Wise's canonical 24px pill radius */
+  --radius-card: 24px;
+  --radius-pill: 9999px;
+
+  --font-display: "Manrope Variable", "Inter Variable", system-ui, sans-serif;
+  --font-body: "Inter Variable", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-canvas-soft);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}

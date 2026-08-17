@@ -1,0 +1,41 @@
+---
+const faqs = [
+  {
+    q: "Apakah aman untuk solo traveler perempuan?",
+    a: "Sangat aman, sebagian besar peserta kami solo traveler dan trip leader memastikan semua nyaman sepanjang perjalanan.",
+  },
+  {
+    q: "Bagaimana sistem kamar untuk share room?",
+    a: "Umumnya sesama gender, kecuali ada kesepakatan khusus (pasangan atau keluarga yang ikut bersama).",
+  },
+  {
+    q: "Apakah bisa refund kalau berhalangan?",
+    a: "Kebijakan refund tergantung H- pembatalan, detail tercantum di syarat dan ketentuan tiap trip.",
+  },
+  {
+    q: "Berapa minimal usia untuk ikut?",
+    a: "Umumnya 17 tahun ke atas, beberapa trip family-friendly terbuka untuk semua usia.",
+  },
+  {
+    q: "Bagaimana kalau trip yang saya mau slotnya sudah penuh?",
+    a: "Bisa masuk waitlist, atau kami infokan jadwal trip serupa berikutnya.",
+  },
+];
+---
+<section id="faq" class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+  <h2 class="font-display text-2xl font-extrabold tracking-tight text-ink md:text-3xl">
+    Pertanyaan Umum
+  </h2>
+
+  <div class="mt-8 divide-y divide-black/5 rounded-card bg-canvas shadow-sm">
+    {faqs.map((item) => (
+      <details class="group px-6 py-4">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-semibold text-ink [&::-webkit-details-marker]:hidden">
+          {item.q}
+          <span class="shrink-0 text-mute transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-body">{item.a}</p>
+      </details>
+    ))}
+  </div>
+</section>

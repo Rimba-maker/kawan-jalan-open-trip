@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadges from "../components/TrustBadges.astro";
+import FAQAccordion from "../components/FAQAccordion.astro";
+import HeroHome from "../components/react/HeroHome";
+import CategoryPicker from "../components/react/CategoryPicker";
+import Testimonials from "../components/react/Testimonials";
+---
+
+<Layout
+  title="Kawan Jalan - Open Trip Nusantara & Global, Solo Traveler Friendly"
+  description="Gabung open trip domestik atau luar negeri bareng traveler seru lainnya. Harga terjangkau, itinerary matang, dapat teman baru di setiap perjalanan. Pilih trip Nusantara atau Global sekarang."
+  keywords="open trip, open trip indonesia, open trip luar negeri, solo traveler, trip organizer, join trip, kawan jalan"
+  ogImageAlt="Foto gabungan traveler di destinasi domestik dan internasional dengan logo Kawan Jalan"
+  active="home"
+>
+  <HeroHome client:load />
+  <TrustBadges />
+  <CategoryPicker client:load />
+  <Testimonials client:visible />
+  <FAQAccordion />
+</Layout>

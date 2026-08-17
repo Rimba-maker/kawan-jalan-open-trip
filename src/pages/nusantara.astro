@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import HeroCategory from "../components/react/HeroCategory";
+import WhyOpenTrip from "../components/react/WhyOpenTrip";
+import TripSchedule from "../components/react/TripSchedule";
+import DestinationGrid from "../components/react/DestinationGrid";
+import Inclusions from "../components/react/Inclusions";
+import VibeMatching from "../components/react/VibeMatching";
+import ContentAddons from "../components/react/ContentAddons";
+import JoinForm from "../components/react/JoinForm";
+
+const entries = await getCollection("trips", ({ data }) => data.category === "nusantara");
+const trips = entries.map((e) => e.data);
+
+const destinations = [
+  { name: "Bromo", image: "https://picsum.photos/seed/destinasi-bromo/500/500" },
+  { name: "Labuan Bajo", image: "https://picsum.photos/seed/destinasi-labuan-bajo/500/500" },
+  { name: "Dieng", image: "https://picsum.photos/seed/destinasi-dieng/500/500" },
+  { name: "Nusa Penida", image: "https://picsum.photos/seed/destinasi-nusa-penida/500/500" },
+  { name: "Karimunjawa", image: "https://picsum.photos/seed/destinasi-karimunjawa/500/500" },
+  { name: "Raja Ampat", image: "https://picsum.photos/seed/destinasi-raja-ampat/500/500" },
+  { name: "Toba", image: "https://picsum.photos/seed/destinasi-toba/500/500" },
+  { name: "Sumba", image: "https://picsum.photos/seed/destinasi-sumba/500/500" },
+  { name: "Svargabumi Borobudur", image: "https://picsum.photos/seed/destinasi-svargabumi/500/500" },
+  { name: "Pulau Ngurtafur", image: "https://picsum.photos/seed/destinasi-ngurtafur/500/500" },
+  { name: "Danau Kakaban", image: "https://picsum.photos/seed/destinasi-kakaban/500/500" },
+  { name: "Taman Nasional Baluran", image: "https://picsum.photos/seed/destinasi-baluran/500/500" },
+];
+
+const inclusions = [
+  "Transport PP dari meeting point",
+  "Penginapan sesuai itinerary (share room)",
+  "Makan sesuai jadwal (umumnya 2-3x/hari)",
+  "Tiket masuk destinasi wisata",
+  "Trip leader/guide berpengalaman",
+  "Dokumentasi grup (foto bersama momen utama)",
+  "Asuransi perjalanan dasar",
+];
+---
+
+<Layout
+  title="Open Trip Nusantara - Bromo, Labuan Bajo, Dieng & Destinasi Viral | Kawan Jalan"
+  description="Open trip domestik ke Bromo, Labuan Bajo, Dieng, Svargabumi, dan destinasi viral lainnya. Harga cost-sharing terjangkau, gabung dengan solo traveler seru lainnya."
+  keywords="open trip nusantara, open trip bromo, open trip labuan bajo, open trip dieng, wisata viral indonesia, solo traveler indonesia"
+  ogImageAlt="Foto grup traveler di destinasi domestik ikonik"
+  active="nusantara"
+>
+  <HeroCategory
+    client:load
+    headline="Liburan Gak Harus Nunggu Ada Teman Yang Bisa Ikut."
+    subtext="Open trip dengan itinerary jelas dan harga terjangkau. Kamu bakal gabung dengan orang-orang seru yang jadi teman traveling seterusnya."
+    heroImage="https://picsum.photos/seed/nusantara-hero-group/1000/900"
+    heroImageAlt="Grup traveler duduk bersama menikmati matahari terbit di Bromo"
+    accent="var(--color-category-nusantara)"
+  />
+  <WhyOpenTrip client:visible />
+  <TripSchedule client:load trips={trips} category="nusantara" />
+  <DestinationGrid client:visible heading="Destinasi Favorit Kawan Jalan" destinations={destinations} />
+  <Inclusions
+    client:visible
+    items={inclusions}
+    excludesNote="Tidak termasuk: pengeluaran pribadi, tiket pesawat menuju kota keberangkatan (kecuali disebutkan khusus)"
+  />
+  <VibeMatching client:visible />
+  <ContentAddons client:visible />
+  <JoinForm client:idle trips={trips} />
+</Layout>

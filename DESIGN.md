@@ -31,6 +31,8 @@ colors:
   vibe-content: "#E0489A"
   vibe-party: "#8B5FBF"
   vibe-family: "#5B9BD5"
+  category-nusantara: "#B85C2E"
+  category-global: "#3E6FA8"
 
 typography:
   display-mega:
@@ -313,7 +315,7 @@ components:
 
 ## Overview
 
-> **Tailored for Kawan Jalan — Open Trip Organizer.** Base system is Wise, chosen for the "transparent, honest numbers" fit with open-trip cost-sharing (visible slot counts, no hidden markup). Two deliberate deviations from stock Wise, documented inline below: (1) five `{colors.vibe-*}` accent tones added for the Vibe Matching tag system, scoped strictly to tags/badges — CTAs and pricing stay on `{colors.primary}` alone; (2) photography flipped from "sparse" to photography-forward, since every PRD section anchors on a real destination/group photo.
+> **Tailored for Kawan Jalan — Open Trip Organizer.** Base system is Wise, chosen for the "transparent, honest numbers" fit with open-trip cost-sharing (visible slot counts, no hidden markup) — a fit that only strengthened once the PRD grew multi-page (Wise is itself a cross-border brand). Three deliberate deviations from stock Wise, documented inline below: (1) five `{colors.vibe-*}` accent tones for the Vibe Matching tag system, scoped strictly to tags/badges; (2) photography flipped from "sparse" to photography-forward, since every PRD section anchors on a real destination/group photo; (3) two `{colors.category-*}` tokens (`category-nusantara` terracotta, `category-global` deep sky-blue) for page-orientation accents only — kicker labels, the Home category-card border, a small hero highlight on `/nusantara` and `/global` — so a user always has a subtle visual cue for which page they're on. CTAs and pricing stay on `{colors.primary}` alone in all three cases.
 
 Wise — the global money-transfer brand — wears its identity in a single signature pairing: a vivid lime-green `{colors.primary}` (`#9fe870`) used as the CTA pill and brand accent, set against a pale sage-tinted canvas `{colors.canvas-soft}` (`#e8ebe6`) that runs across the hero band, and a near-black ink `{colors.ink}` (`#0e0f0c`) with a hint of warmth from the brand's underlying olive cast. The brand reads more like a calm Scandinavian magazine than a bank — generous whitespace, large rounded cards, and an unusually heavy display sans set at weight 900 carrying every hero headline.
 
@@ -561,7 +563,7 @@ The brand uses surface contrast (`{colors.canvas-soft}` background vs `{colors.c
 - Use the full semantic palette (positive / warning / negative) for in-product status — never repurpose Wise green as success indicator since it IS the brand CTA.
 
 ### Don't
-- Don't introduce a second brand accent for CTAs/pricing — Wise green (`{colors.primary}`) stays the sole conversion colour. **Exception, scoped to this project:** the five `{colors.vibe-*}` tones exist only for Vibe Matching tags/badges — never use them on a button or price.
+- Don't introduce a second brand accent for CTAs/pricing — Wise green (`{colors.primary}`) stays the sole conversion colour. **Exception, scoped to this project:** the five `{colors.vibe-*}` tones exist only for Vibe Matching tags/badges, and `{colors.category-nusantara}` / `{colors.category-global}` exist only for page-orientation accents (kicker labels, category-card border on Home, small hero highlight on `/nusantara` and `/global`) — never on a button, price, or large fill.
 - Don't render the hero in weight 700 or lighter. The brand's display weight is 900.
 - Don't render CTAs as sharp rectangles. The 24 px pill geometry is non-negotiable.
 - Don't pair the green CTA with a green background. The brand always sits Wise green on neutral surfaces (sage / white / ink).

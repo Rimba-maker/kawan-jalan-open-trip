@@ -1,0 +1,15 @@
+---
+const badges = [
+  "50+ Trip per Tahun",
+  "2.000+ Traveler Sudah Gabung",
+  "Trip Nusantara & Global",
+  "Rating 4.8 dari Peserta",
+];
+---
+<div class="border-y border-black/5 bg-canvas">
+  <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-x-8 gap-y-3 px-4 py-5 sm:px-6">
+    {badges.map((b) => (
+      <span class="text-sm font-semibold text-body">{b}</span>
+    ))}
+  </div>
+</div>

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "bromo-ijen-sunrise-hunter",
+    "title": "Bromo Ijen Sunrise Hunter",
+    "category": "nusantara",
+    "viral": false,
+    "vibeTags": ["adventure", "content"],
+    "dateStart": "2026-08-15",
+    "dateEnd": "2026-08-17",
+    "durationLabel": "3D2N",
+    "price": 1450000,
+    "priceExcludes": "Tidak termasuk tiket pesawat menuju kota keberangkatan",
+    "slotFilled": 4,
+    "slotTotal": 15,
+    "images": [
+      "https://picsum.photos/seed/bromo-ijen-sunrise-hero/1200/900",
+      "https://picsum.photos/seed/bromo-ijen-sunrise-crater/1200/900"
+    ],
+    "addons": ["fotografer"]
+  },
+  {
+    "id": "labuan-bajo-sailing-trip",
+    "title": "Labuan Bajo Sailing Trip",
+    "category": "nusantara",
+    "viral": false,
+    "vibeTags": ["chill", "adventure", "content"],
+    "dateStart": "2026-08-22",
+    "dateEnd": "2026-08-25",
+    "durationLabel": "4D3N",
+    "price": 3200000,
+    "priceExcludes": "Tidak termasuk tiket pesawat menuju kota keberangkatan",
+    "slotFilled": 8,
+    "slotTotal": 12,
+    "images": [
+      "https://picsum.photos/seed/labuan-bajo-sailing-hero/1200/900",
+      "https://picsum.photos/seed/labuan-bajo-komodo-boat/1200/900"
+    ],
+    "addons": ["drone", "fotografer"]
+  },
+  {
+    "id": "dieng-golden-sunrise",
+    "title": "Dieng Golden Sunrise",
+    "category": "nusantara",
+    "viral": true,
+    "vibeTags": ["chill", "content"],
+    "dateStart": "2026-08-29",
+    "dateEnd": "2026-08-30",
+    "durationLabel": "2D1N",
+    "price": 850000,
+    "priceExcludes": "Tidak termasuk tiket pesawat menuju kota keberangkatan",
+    "slotFilled": 2,
+    "slotTotal": 15,
+    "images": [
+      "https://picsum.photos/seed/dieng-golden-sunrise-hero/1200/900",
+      "https://picsum.photos/seed/telaga-warna-dieng/1200/900"
+    ],
+    "addons": ["fotografer", "same-day-edit"]
+  },
+  {
+    "id": "nusa-penida-island-hopping",
+    "title": "Nusa Penida Island Hopping",
+    "category": "nusantara",
+    "viral": false,
+    "vibeTags": ["adventure", "content", "party"],
+    "dateStart": "2026-09-05",
+    "dateEnd": "2026-09-07",
+    "durationLabel": "3D2N",
+    "price": 1750000,
+    "priceExcludes": "Tidak termasuk tiket pesawat menuju kota keberangkatan",
+    "slotFilled": 10,
+    "slotTotal": 15,
+    "images": [
+      "https://picsum.photos/seed/nusa-penida-hopping-hero/1200/900",
+      "https://picsum.photos/seed/nusa-penida-kelingking/1200/900"
+    ],
+    "addons": ["drone", "fotografer"]
+  },
+  {
+    "id": "svargabumi-borobudur-golden-hour",
+    "title": "Svargabumi Borobudur Golden Hour",
+    "category": "nusantara",
+    "viral": true,
+    "vibeTags": ["chill", "content"],
+    "dateStart": "2026-09-06",
+    "dateEnd": "2026-09-06",
+    "durationLabel": "1D",
+    "price": 350000,
+    "priceExcludes": "Tidak termasuk transport pribadi ke meeting point Yogyakarta",
+    "slotFilled": 6,
+    "slotTotal": 20,
+    "images": [
+      "https://picsum.photos/seed/svargabumi-golden-hour-hero/1200/900",
+      "https://picsum.photos/seed/svargabumi-floating-bed/1200/900"
+    ],
+    "addons": ["fotografer", "same-day-edit"]
+  },
+  {
+    "id": "pulau-ngurtafur-hidden-paradise",
+    "title": "Pulau Ngurtafur Hidden Paradise",
+    "category": "nusantara",
+    "viral": true,
+    "vibeTags": ["adventure", "content"],
+    "dateStart": "2026-09-12",
+    "dateEnd": "2026-09-14",
+    "durationLabel": "3D2N",
+    "price": 3500000,
+    "priceExcludes": "Tidak termasuk tiket pesawat PP ke Langgur/Tual",
+    "slotFilled": 5,
+    "slotTotal": 10,
+    "images": [
+      "https://picsum.photos/seed/pulau-ngurtafur-sandbar-hero/1200/900",
+      "https://picsum.photos/seed/pulau-ngurtafur-aerial/1200/900"
+    ],
+    "addons": ["drone"]
+  },
+  {
+    "id": "danau-kakaban-derawan",
+    "title": "Danau Kakaban & Kepulauan Derawan",
+    "category": "nusantara",
+    "viral": true,
+    "vibeTags": ["adventure", "chill"],
+    "dateStart": "2026-09-19",
+    "dateEnd": "2026-09-21",
+    "durationLabel": "3D2N",
+    "price": 2800000,
+    "priceExcludes": "Tidak termasuk tiket pesawat PP ke Berau",
+    "slotFilled": 3,
+    "slotTotal": 12,
+    "images": [
+      "https://picsum.photos/seed/danau-kakaban-jellyfish-hero/1200/900",
+      "https://picsum.photos/seed/derawan-islands/1200/900"
+    ],
+    "addons": ["drone", "fotografer"]
+  },
+  {
+    "id": "taman-nasional-baluran-savana",
+    "title": "Taman Nasional Baluran Savana Safari",
+    "category": "nusantara",
+    "viral": true,
+    "vibeTags": ["adventure", "family", "content"],
+    "dateStart": "2026-09-26",
+    "dateEnd": "2026-09-27",
+    "durationLabel": "2D1N",
+    "price": 950000,
+    "priceExcludes": "Tidak termasuk transport pribadi ke meeting point Banyuwangi/Situbondo",
+    "slotFilled": 7,
+    "slotTotal": 15,
+    "images": [
+      "https://picsum.photos/seed/baluran-savana-hero/1200/900",
+      "https://picsum.photos/seed/baluran-safari-wildlife/1200/900"
+    ],
+    "addons": ["fotografer"]
+  },
+  {
+    "id": "malaysia-city-escape",
+    "title": "Malaysia City Escape - Kuala Lumpur & Genting",
+    "category": "global",
+    "viral": false,
+    "vibeTags": ["content", "family"],
+    "dateStart": "2026-10-10",
+    "dateEnd": "2026-10-12",
+    "durationLabel": "3D2N",
+    "price": 3900000,
+    "priceExcludes": "Tidak termasuk tiket pesawat internasional PP. WNI bebas visa Malaysia (maks 30 hari).",
+    "slotFilled": 9,
+    "slotTotal": 15,
+    "images": [
+      "https://picsum.photos/seed/kuala-lumpur-skyline-hero/1200/900",
+      "https://picsum.photos/seed/genting-highlands/1200/900"
+    ],
+    "addons": ["fotografer"]
+  },
+  {
+    "id": "vietnam-ha-long-bay-cruise",
+    "title": "Vietnam Ha Long Bay Cruise",
+    "category": "global",
+    "viral": false,
+    "vibeTags": ["chill", "adventure", "content"],
+    "dateStart": "2026-10-17",
+    "dateEnd": "2026-10-20",
+    "durationLabel": "4D3N",
+    "price": 6800000,
+    "priceExcludes": "Tidak termasuk tiket pesawat internasional PP. WNI bebas visa Vietnam (maks 45 hari).",
+    "slotFilled": 6,
+    "slotTotal": 12,
+    "images": [
+      "https://picsum.photos/seed/ha-long-bay-cruise-hero/1200/900",
+      "https://picsum.photos/seed/ha-long-bay-karst/1200/900"
+    ],
+    "addons": ["drone", "fotografer"]
+  },
+  {
+    "id": "jepang-tokyo-kyoto-fuji",
+    "title": "Jepang Tokyo-Kyoto-Fuji Explorer",
+    "category": "global",
+    "viral": false,
+    "vibeTags": ["content", "chill", "family"],
+    "dateStart": "2026-11-02",
+    "dateEnd": "2026-11-07",
+    "durationLabel": "6D5N",
+    "price": 14500000,
+    "priceExcludes": "Tidak termasuk tiket pesawat internasional PP dan visa Jepang (apply terpisah, estimasi Rp 600.000).",
+    "slotFilled": 4,
+    "slotTotal": 10,
+    "images": [
+      "https://picsum.photos/seed/tokyo-kyoto-fuji-hero/1200/900",
+      "https://picsum.photos/seed/mount-fuji-view/1200/900"
+    ],
+    "addons": ["drone", "fotografer", "same-day-edit"]
+  }
+]

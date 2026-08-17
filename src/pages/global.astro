@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import HeroCategory from "../components/react/HeroCategory";
+import WhyOpenTrip from "../components/react/WhyOpenTrip";
+import TripSchedule from "../components/react/TripSchedule";
+import DestinationGrid from "../components/react/DestinationGrid";
+import Inclusions from "../components/react/Inclusions";
+import VibeMatching from "../components/react/VibeMatching";
+import ContentAddons from "../components/react/ContentAddons";
+import JoinForm from "../components/react/JoinForm";
+
+const entries = await getCollection("trips", ({ data }) => data.category === "global");
+const trips = entries.map((e) => e.data);
+
+const destinations = [
+  { name: "Kuala Lumpur", image: "https://picsum.photos/seed/destinasi-kuala-lumpur/500/500" },
+  { name: "Genting Highlands", image: "https://picsum.photos/seed/destinasi-genting/500/500" },
+  { name: "Ha Long Bay", image: "https://picsum.photos/seed/destinasi-ha-long-bay/500/500" },
+  { name: "Tokyo", image: "https://picsum.photos/seed/destinasi-tokyo/500/500" },
+  { name: "Kyoto", image: "https://picsum.photos/seed/destinasi-kyoto/500/500" },
+  { name: "Gunung Fuji", image: "https://picsum.photos/seed/destinasi-gunung-fuji/500/500" },
+];
+
+const inclusions = [
+  "Transport PP dari meeting point",
+  "Penginapan sesuai itinerary (share room)",
+  "Makan sesuai jadwal (umumnya 2-3x/hari)",
+  "Tiket masuk destinasi wisata",
+  "Trip leader/guide berpengalaman",
+  "Dokumentasi grup (foto bersama momen utama)",
+  "Asuransi perjalanan dasar",
+  "Pendampingan dokumen perjalanan (asistensi info visa, bukan pengurusan visa penuh)",
+];
+---
+
+<Layout
+  title="Open Trip Global - Jepang, Vietnam, Malaysia | Kawan Jalan"
+  description="Open trip luar negeri ke Jepang, Vietnam, Malaysia bareng traveler Indonesia lainnya. Itinerary matang, harga cost-sharing, teman baru di setiap negara."
+  keywords="open trip luar negeri, open trip jepang, open trip vietnam, open trip malaysia, solo traveler internasional, trip luar negeri murah"
+  ogImageAlt="Foto grup traveler di destinasi internasional ikonik"
+  active="global"
+>
+  <HeroCategory
+    client:load
+    headline="Liburan ke Luar Negeri, Tapi Gak Sendirian."
+    subtext="Jepang, Vietnam, Malaysia sudah ada itinerary lengkap. Kamu berangkat bareng traveler Indonesia lain yang sama-sama excited jalan-jalan ke luar negeri."
+    heroImage="https://picsum.photos/seed/global-hero-group/1000/900"
+    heroImageAlt="Grup traveler Indonesia berfoto bersama di depan Gunung Fuji"
+    accent="var(--color-category-global)"
+  />
+  <WhyOpenTrip client:visible />
+  <TripSchedule client:load trips={trips} category="global" />
+  <DestinationGrid client:visible heading="Destinasi Favorit Kawan Jalan Global" destinations={destinations} />
+  <Inclusions
+    client:visible
+    items={inclusions}
+    excludesNote="Tidak termasuk: pengeluaran pribadi, tiket pesawat internasional PP, visa (kecuali disebutkan khusus per trip, lihat disclaimer di tiap trip card)"
+  />
+  <VibeMatching client:visible />
+  <ContentAddons client:visible />
+  <JoinForm client:idle trips={trips} />
+</Layout>
