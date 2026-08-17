@@ -5,19 +5,19 @@ const QUOTES = [
     quote: "Ikut trip sendirian karena semua teman sibuk, eh malah pulang punya circle baru yang masih hangout sampai sekarang.",
     name: "Rian",
     trip: "Bromo Trip",
-    image: "https://picsum.photos/seed/testimonial-rian-bromo/400/400",
+    image: "https://images.pexels.com/photos/17034916/pexels-photo-17034916.jpeg",
   },
   {
     quote: "Trip leader-nya asik, itinerary jalan sesuai jadwal, dan yang bikin beda, beneran matched sama orang-orang yang vibe-nya cocok.",
     name: "Sasa",
     trip: "Labuan Bajo Trip",
-    image: "https://picsum.photos/seed/testimonial-sasa-labuanbajo/400/400",
+    image: "https://images.pexels.com/photos/8998361/pexels-photo-8998361.jpeg",
   },
   {
     quote: "Awalnya ragu solo trip, ternyata ini cara paling gampang buat mulai. Semua orang juga sendirian, jadi gak ada yang canggung.",
     name: "Bayu",
     trip: "Dieng Trip",
-    image: "https://picsum.photos/seed/testimonial-bayu-dieng/400/400",
+    image: "https://images.pexels.com/photos/33967675/pexels-photo-33967675.jpeg",
   },
 ];
 

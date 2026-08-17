@@ -51,7 +51,7 @@ export default function HeroHome() {
         className="overflow-hidden rounded-card"
       >
         <img
-          src="https://picsum.photos/seed/kawan-jalan-hero-group/1000/900"
+          src="https://images.pexels.com/photos/38421126/pexels-photo-38421126.jpeg"
           alt="Grup traveler Kawan Jalan tertawa bersama di puncak gunung saat golden hour"
           className="aspect-[10/9] w-full object-cover"
           loading="eager"

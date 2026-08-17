@@ -7,7 +7,7 @@ const CARDS = [
     title: "Open Trip Nusantara",
     body: "Bromo, Labuan Bajo, sampai spot yang lagi viral di TikTok. Semua di Indonesia, semua deket dari rumah.",
     cta: "Cek Trip Nusantara",
-    image: "https://picsum.photos/seed/kategori-nusantara-bromo/900/700",
+    image: "https://images.pexels.com/photos/29231588/pexels-photo-29231588.jpeg",
     alt: "Grup traveler berdiri di tepi kawah Bromo saat sunrise",
   },
   {
@@ -16,7 +16,7 @@ const CARDS = [
     title: "Open Trip Global",
     body: "Jepang, Vietnam, Malaysia. Liburan ke luar negeri nggak perlu ribet urus sendiri, apalagi sendirian.",
     cta: "Cek Trip Global",
-    image: "https://picsum.photos/seed/kategori-global-tokyo/900/700",
+    image: "https://images.pexels.com/photos/36092385/pexels-photo-36092385.jpeg",
     alt: "Grup traveler berjalan di persimpangan kota Tokyo pada malam hari",
   },
 ];

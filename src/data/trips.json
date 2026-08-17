@@ -13,8 +13,8 @@
     "slotFilled": 4,
     "slotTotal": 15,
     "images": [
-      "https://picsum.photos/seed/bromo-ijen-sunrise-hero/1200/900",
-      "https://picsum.photos/seed/bromo-ijen-sunrise-crater/1200/900"
+      "https://images.pexels.com/photos/38262907/pexels-photo-38262907.jpeg",
+      "https://images.pexels.com/photos/38132000/pexels-photo-38132000.jpeg"
     ],
     "addons": ["fotografer"]
   },
@@ -32,8 +32,8 @@
     "slotFilled": 8,
     "slotTotal": 12,
     "images": [
-      "https://picsum.photos/seed/labuan-bajo-sailing-hero/1200/900",
-      "https://picsum.photos/seed/labuan-bajo-komodo-boat/1200/900"
+      "https://images.pexels.com/photos/35823227/pexels-photo-35823227.jpeg",
+      "https://images.pexels.com/photos/18340434/pexels-photo-18340434.jpeg"
     ],
     "addons": ["drone", "fotografer"]
   },
@@ -51,8 +51,8 @@
     "slotFilled": 2,
     "slotTotal": 15,
     "images": [
-      "https://picsum.photos/seed/dieng-golden-sunrise-hero/1200/900",
-      "https://picsum.photos/seed/telaga-warna-dieng/1200/900"
+      "https://images.pexels.com/photos/37649297/pexels-photo-37649297.jpeg",
+      "https://images.pexels.com/photos/6819360/pexels-photo-6819360.jpeg"
     ],
     "addons": ["fotografer", "same-day-edit"]
   },
@@ -70,8 +70,8 @@
     "slotFilled": 10,
     "slotTotal": 15,
     "images": [
-      "https://picsum.photos/seed/nusa-penida-hopping-hero/1200/900",
-      "https://picsum.photos/seed/nusa-penida-kelingking/1200/900"
+      "https://images.pexels.com/photos/6407829/pexels-photo-6407829.jpeg",
+      "https://images.pexels.com/photos/19160408/pexels-photo-19160408.jpeg"
     ],
     "addons": ["drone", "fotografer"]
   },
@@ -89,8 +89,8 @@
     "slotFilled": 6,
     "slotTotal": 20,
     "images": [
-      "https://picsum.photos/seed/svargabumi-golden-hour-hero/1200/900",
-      "https://picsum.photos/seed/svargabumi-floating-bed/1200/900"
+      "https://images.pexels.com/photos/34034317/pexels-photo-34034317.jpeg",
+      "https://images.pexels.com/photos/35632238/pexels-photo-35632238/free-photo-of-woman-on-swing-over-lush-rice-terraces-in-java.jpeg"
     ],
     "addons": ["fotografer", "same-day-edit"]
   },
@@ -108,8 +108,8 @@
     "slotFilled": 5,
     "slotTotal": 10,
     "images": [
-      "https://picsum.photos/seed/pulau-ngurtafur-sandbar-hero/1200/900",
-      "https://picsum.photos/seed/pulau-ngurtafur-aerial/1200/900"
+      "https://images.pexels.com/photos/37208430/pexels-photo-37208430.jpeg",
+      "https://images.pexels.com/photos/27215736/pexels-photo-27215736.jpeg"
     ],
     "addons": ["drone"]
   },
@@ -127,8 +127,8 @@
     "slotFilled": 3,
     "slotTotal": 12,
     "images": [
-      "https://picsum.photos/seed/danau-kakaban-jellyfish-hero/1200/900",
-      "https://picsum.photos/seed/derawan-islands/1200/900"
+      "https://images.pexels.com/photos/30348743/pexels-photo-30348743.jpeg",
+      "https://images.pexels.com/photos/32277150/pexels-photo-32277150.jpeg"
     ],
     "addons": ["drone", "fotografer"]
   },
@@ -146,8 +146,8 @@
     "slotFilled": 7,
     "slotTotal": 15,
     "images": [
-      "https://picsum.photos/seed/baluran-savana-hero/1200/900",
-      "https://picsum.photos/seed/baluran-safari-wildlife/1200/900"
+      "https://images.pexels.com/photos/38703956/pexels-photo-38703956.jpeg",
+      "https://images.pexels.com/photos/38935435/pexels-photo-38935435.jpeg"
     ],
     "addons": ["fotografer"]
   },
@@ -165,8 +165,8 @@
     "slotFilled": 9,
     "slotTotal": 15,
     "images": [
-      "https://picsum.photos/seed/kuala-lumpur-skyline-hero/1200/900",
-      "https://picsum.photos/seed/genting-highlands/1200/900"
+      "https://images.pexels.com/photos/5396577/pexels-photo-5396577.jpeg",
+      "https://images.pexels.com/photos/18122071/pexels-photo-18122071.jpeg"
     ],
     "addons": ["fotografer"]
   },
@@ -184,8 +184,8 @@
     "slotFilled": 6,
     "slotTotal": 12,
     "images": [
-      "https://picsum.photos/seed/ha-long-bay-cruise-hero/1200/900",
-      "https://picsum.photos/seed/ha-long-bay-karst/1200/900"
+      "https://images.pexels.com/photos/5531543/pexels-photo-5531543.jpeg",
+      "https://images.pexels.com/photos/38116420/pexels-photo-38116420.jpeg"
     ],
     "addons": ["drone", "fotografer"]
   },
@@ -203,8 +203,8 @@
     "slotFilled": 4,
     "slotTotal": 10,
     "images": [
-      "https://picsum.photos/seed/tokyo-kyoto-fuji-hero/1200/900",
-      "https://picsum.photos/seed/mount-fuji-view/1200/900"
+      "https://images.pexels.com/photos/35827257/pexels-photo-35827257.jpeg",
+      "https://images.pexels.com/photos/32416035/pexels-photo-32416035.jpeg"
     ],
     "addons": ["drone", "fotografer", "same-day-edit"]
   }
