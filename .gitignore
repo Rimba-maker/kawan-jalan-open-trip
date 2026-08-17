@@ -1,0 +1,9 @@
+# Confidential docs — not for the public repo
+*PRD*.md
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+.env
+.env.*
