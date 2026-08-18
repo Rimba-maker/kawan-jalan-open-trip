@@ -25,12 +25,12 @@ export default function VibeMatching() {
             viewport={{ once: true, amount: 0.5 }}
             whileHover={reduce ? undefined : { scale: 1.06 }}
             transition={{ duration: 0.4, delay: i * 0.08, ease: "easeOut" }}
-            className="group rounded-pill px-4 py-2 text-sm font-semibold text-canvas"
+            className="group flex items-center gap-1.5 rounded-pill px-4 py-2 text-sm font-semibold text-canvas"
             style={{ backgroundColor: meta.color }}
           >
-            <span className="inline-block transition-transform group-hover:-translate-y-0.5" aria-hidden="true">
-              {meta.emoji}
-            </span>{" "}
+            <span className="inline-flex transition-transform group-hover:-translate-y-0.5" aria-hidden="true">
+              <meta.icon size={16} weight="bold" />
+            </span>
             {meta.label}
           </motion.span>
         ))}

@@ -1,9 +1,11 @@
+import { FlowerLotus, Mountains, Camera, Confetti, UsersFour } from "@phosphor-icons/react";
+
 export const VIBE_META = {
-  chill: { emoji: "🧘", label: "Chill & Healing", color: "var(--color-vibe-chill)" },
-  adventure: { emoji: "🥾", label: "Adventure & Fisik Aktif", color: "var(--color-vibe-adventure)" },
-  content: { emoji: "📸", label: "Content Hunter", color: "var(--color-vibe-content)" },
-  party: { emoji: "🎉", label: "Party & Sosial", color: "var(--color-vibe-party)" },
-  family: { emoji: "👨‍👩‍👧", label: "Family Friendly", color: "var(--color-vibe-family)" },
+  chill: { icon: FlowerLotus, label: "Chill & Healing", color: "var(--color-vibe-chill)" },
+  adventure: { icon: Mountains, label: "Adventure & Fisik Aktif", color: "var(--color-vibe-adventure)" },
+  content: { icon: Camera, label: "Content Hunter", color: "var(--color-vibe-content)" },
+  party: { icon: Confetti, label: "Party & Sosial", color: "var(--color-vibe-party)" },
+  family: { icon: UsersFour, label: "Family Friendly", color: "var(--color-vibe-family)" },
 } as const;
 
 export const ADDON_META = {

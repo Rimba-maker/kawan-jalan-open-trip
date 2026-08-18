@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { Flame } from "@phosphor-icons/react";
 import type { Trip } from "../../lib/types";
 import { VIBE_META } from "../../lib/constants";
 import { formatIDR, formatDateRange } from "../../lib/format";
@@ -24,9 +25,10 @@ export default function TripCard({ trip }: { trip: Trip }) {
           <motion.span
             animate={reduce ? undefined : { scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: 3, ease: "easeInOut" }}
-            className="absolute left-3 top-3 rounded-pill bg-negative px-3 py-1 text-xs font-bold text-canvas"
+            className="absolute left-3 top-3 flex items-center gap-1 rounded-pill bg-negative px-3 py-1 text-xs font-bold text-canvas"
           >
-            🔥 Lagi Viral
+            <Flame size={14} weight="fill" />
+            Lagi Viral
           </motion.span>
         )}
       </div>
@@ -43,10 +45,11 @@ export default function TripCard({ trip }: { trip: Trip }) {
             return (
               <span
                 key={tag}
-                className="rounded-pill px-2.5 py-1 text-xs font-semibold text-canvas"
+                className="flex items-center gap-1 rounded-pill px-2.5 py-1 text-xs font-semibold text-canvas"
                 style={{ backgroundColor: meta.color }}
               >
-                {meta.emoji} {meta.label}
+                <meta.icon size={13} weight="bold" />
+                {meta.label}
               </span>
             );
           })}

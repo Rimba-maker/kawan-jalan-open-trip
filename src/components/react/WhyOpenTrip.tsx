@@ -1,23 +1,24 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { UsersThree, Coins, ClipboardText, Handshake } from "@phosphor-icons/react";
 
 const REASONS = [
   {
-    emoji: "👥",
+    Icon: UsersThree,
     title: "Gak Perlu Nunggu Teman Available",
     body: "Semua orang di grup juga berangkat sendiri. Kamu tidak akan jadi satu-satunya solo traveler yang canggung.",
   },
   {
-    emoji: "💰",
+    Icon: Coins,
     title: "Harga Lebih Terjangkau",
     body: "Biaya transport, penginapan, dan guide dibagi rata dengan peserta lain. Liburan seru tanpa bikin dompet nangis.",
   },
   {
-    emoji: "📋",
+    Icon: ClipboardText,
     title: "Itinerary Sudah Matang",
     body: "Tidak perlu riset rute, cari penginapan, atau nego harga sendiri. Tinggal ikut jadwal yang sudah teruji.",
   },
   {
-    emoji: "🤝",
+    Icon: Handshake,
     title: "Networking Alami Sambil Liburan",
     body: "Banyak persahabatan (bahkan hubungan) yang dimulai dari open trip. Pengalaman sosial adalah bagian dari produknya, bukan bonus.",
   },
@@ -42,8 +43,8 @@ export default function WhyOpenTrip() {
             transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
             className="grid gap-2 py-6 sm:grid-cols-[3rem_1fr] sm:gap-6 sm:py-8"
           >
-            <span className="text-3xl leading-none" aria-hidden="true">
-              {r.emoji}
+            <span className="text-ink" aria-hidden="true">
+              <r.Icon size={32} weight="duotone" />
             </span>
             <div>
               <h3 className="font-display text-lg font-extrabold text-ink">{r.title}</h3>
