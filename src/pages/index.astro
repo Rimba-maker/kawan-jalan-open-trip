@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadges from "../components/TrustBadges.astro";
 import FAQAccordion from "../components/FAQAccordion.astro";
 import HeroHome from "../components/react/HeroHome";
+import WhyOpenTrip from "../components/react/WhyOpenTrip";
 import CategoryPicker from "../components/react/CategoryPicker";
 import Testimonials from "../components/react/Testimonials";
 ---
@@ -16,6 +17,7 @@ import Testimonials from "../components/react/Testimonials";
 >
   <HeroHome client:load />
   <TrustBadges />
+  <WhyOpenTrip client:visible />
   <CategoryPicker client:load />
   <Testimonials client:visible />
   <FAQAccordion />

@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import HeroCategory from "../components/react/HeroCategory";
-import WhyOpenTrip from "../components/react/WhyOpenTrip";
 import TripSchedule from "../components/react/TripSchedule";
 import DestinationGrid from "../components/react/DestinationGrid";
 import Inclusions from "../components/Inclusions.astro";
@@ -38,7 +37,6 @@ const trips = entries.map((e) => e.data);
     heroImageAlt={page.hero.heroImageAlt}
     accent={`var(--color-category-${category})`}
   />
-  <WhyOpenTrip client:visible />
   <TripSchedule client:visible trips={trips} category={category} />
   <DestinationGrid client:visible heading={page.destinationsHeading} destinations={page.destinations} />
   <Inclusions items={page.inclusions} excludesNote={page.excludesNote} />
