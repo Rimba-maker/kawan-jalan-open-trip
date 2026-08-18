@@ -1,8 +1,9 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { withBase } from "../../lib/paths";
 
 const CARDS = [
   {
-    href: "/nusantara",
+    href: withBase("/nusantara"),
     accent: "var(--color-category-nusantara)",
     title: "Open Trip Nusantara",
     body: "Bromo, Labuan Bajo, sampai spot yang lagi viral di TikTok. Semua di Indonesia, semua deket dari rumah.",
@@ -11,7 +12,7 @@ const CARDS = [
     alt: "Grup traveler berdiri di tepi kawah Bromo saat sunrise",
   },
   {
-    href: "/global",
+    href: withBase("/global"),
     accent: "var(--color-category-global)",
     title: "Open Trip Global",
     body: "Jepang, Vietnam, Malaysia. Liburan ke luar negeri nggak perlu ribet urus sendiri, apalagi sendirian.",

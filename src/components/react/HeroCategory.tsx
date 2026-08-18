@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { withBase } from "../../lib/paths";
 
 interface HeroCategoryProps {
   headline: string;
@@ -47,7 +48,7 @@ export default function HeroCategory({ headline, subtext, heroImage, heroImageAl
             Cek Jadwal Trip
           </a>
           <a
-            href="/#cerita-trip"
+            href={withBase("/#cerita-trip")}
             className="rounded-pill border-2 px-7 py-3 text-base font-semibold text-ink transition-colors"
             style={{ borderColor: accent }}
           >
