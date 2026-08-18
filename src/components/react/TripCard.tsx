@@ -23,7 +23,7 @@ export default function TripCard({ trip }: { trip: Trip }) {
         {trip.viral && (
           <motion.span
             animate={reduce ? undefined : { scale: [1, 1.05, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 2, repeat: 3, ease: "easeInOut" }}
             className="absolute left-3 top-3 rounded-pill bg-negative px-3 py-1 text-xs font-bold text-canvas"
           >
             🔥 Lagi Viral
