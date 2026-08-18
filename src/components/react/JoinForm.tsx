@@ -2,28 +2,41 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import type { Trip } from "../../content.config";
 
+const WHATSAPP_NUMBER = "6281234567890";
+
 export default function JoinForm({ trips }: { trips: Trip[] }) {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setStatus("submitting");
+    const data = new FormData(e.currentTarget);
 
-    const form = e.currentTarget;
-    const body = new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString();
+    const message = [
+      "Halo Kawan Jalan, saya mau gabung trip!",
+      "",
+      `Nama: ${data.get("nama")}`,
+      `WhatsApp: ${data.get("whatsapp")}`,
+      `Trip yang diminati: ${data.get("trip")}`,
+      `Jumlah peserta: ${data.get("peserta")}`,
+      data.get("catatan") ? `Catatan: ${data.get("catatan")}` : null,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
-    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body })
-      .then(() => setStatus("success"))
-      .catch(() => setStatus("error"));
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const opened = window.open(url, "_blank");
+    if (!opened) window.location.href = url;
+    setSubmitted(true);
   }
 
-  if (status === "success") {
+  if (submitted) {
     return (
       <section id="gabung-trip" className="mx-auto max-w-2xl px-4 py-16 sm:px-6">
         <div className="rounded-card bg-primary-pale p-8 text-center">
-          <h2 className="font-display text-xl font-extrabold text-ink">Slot Kamu Sedang Diproses</h2>
+          <h2 className="font-display text-xl font-extrabold text-ink">Yuk Lanjut di WhatsApp</h2>
           <p className="mt-2 text-sm text-body">
-            Tim kami bakal hubungi kamu lewat WhatsApp dalam 1x24 jam buat konfirmasi.
+            Kami sudah buka WhatsApp dengan pesan kamu. Tinggal kirim, tim kami bakal balas secepatnya buat
+            konfirmasi slot.
           </p>
         </div>
       </section>
@@ -36,15 +49,7 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
         Pilih Trip, Amankan Slotmu
       </h2>
 
-      <form
-        name="join-trip"
-        method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-        className="mt-8 space-y-5 rounded-card bg-canvas p-6 shadow-sm sm:p-8"
-      >
-        <input type="hidden" name="form-name" value="join-trip" />
-
+      <form onSubmit={handleSubmit} className="mt-8 space-y-5 rounded-card bg-canvas p-6 shadow-sm sm:p-8">
         <div className="flex flex-col gap-2">
           <label htmlFor="nama" className="text-sm font-semibold text-ink">
             Nama
@@ -118,18 +123,11 @@ export default function JoinForm({ trips }: { trips: Trip[] }) {
           />
         </div>
 
-        {status === "error" && (
-          <p className="text-sm text-negative-deep">
-            Gagal mengirim. Coba lagi, atau hubungi kami langsung lewat WhatsApp.
-          </p>
-        )}
-
         <button
           type="submit"
-          disabled={status === "submitting"}
-          className="w-full rounded-pill bg-primary py-3.5 text-base font-semibold text-on-primary transition-transform hover:brightness-95 active:scale-[0.98] disabled:opacity-60"
+          className="w-full rounded-pill bg-primary py-3.5 text-base font-semibold text-on-primary transition-transform hover:brightness-95 active:scale-[0.98]"
         >
-          {status === "submitting" ? "Mengirim..." : "Gabung Trip Sekarang"}
+          Gabung Trip Sekarang
         </button>
       </form>
     </section>
