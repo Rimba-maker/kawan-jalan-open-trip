@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import HeroCategory from "../components/react/HeroCategory";
+import WhyOpenTrip from "../components/react/WhyOpenTrip";
+import TripSchedule from "../components/react/TripSchedule";
+import DestinationGrid from "../components/react/DestinationGrid";
+import Inclusions from "../components/Inclusions.astro";
+import VibeMatching from "../components/react/VibeMatching";
+import ContentAddons from "../components/react/ContentAddons";
+import JoinForm from "../components/react/JoinForm";
+import { CATEGORY_PAGES } from "../data/categoryPages";
+import { TRIP_CATEGORIES, type TripCategory } from "../lib/tags";
+
+export function getStaticPaths() {
+  return TRIP_CATEGORIES.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params as { category: TripCategory };
+const page = CATEGORY_PAGES[category];
+
+const entries = await getCollection("trips", ({ data }) => data.category === category);
+const trips = entries.map((e) => e.data);
+---
+
+<Layout
+  title={page.seo.title}
+  description={page.seo.description}
+  keywords={page.seo.keywords}
+  ogImageAlt={page.seo.ogImageAlt}
+  active={category}
+>
+  <HeroCategory
+    client:load
+    headline={page.hero.headline}
+    subtext={page.hero.subtext}
+    heroImage={page.hero.heroImage}
+    heroImageAlt={page.hero.heroImageAlt}
+    accent={`var(--color-category-${category})`}
+  />
+  <WhyOpenTrip client:visible />
+  <TripSchedule client:visible trips={trips} category={category} />
+  <DestinationGrid client:visible heading={page.destinationsHeading} destinations={page.destinations} />
+  <Inclusions items={page.inclusions} excludesNote={page.excludesNote} />
+  <VibeMatching client:visible />
+  <ContentAddons client:visible />
+  <JoinForm client:idle trips={trips} />
+</Layout>
