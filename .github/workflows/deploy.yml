@@ -23,6 +23,8 @@ jobs:
 
       - name: Build with Astro
         uses: withastro/action@v3
+        with:
+          node-version: 22
         # astro.config.mjs reads process.env.GITHUB_ACTIONS (set to "true"
         # automatically by this runner) to switch `base` from "/" to
         # "/kawan-jalan-open-trip/" - no extra env wiring needed here.
