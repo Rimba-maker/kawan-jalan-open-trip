@@ -95,42 +95,42 @@
     "addons": ["fotografer", "same-day-edit"]
   },
   {
-    "id": "pulau-ngurtafur-hidden-paradise",
-    "title": "Pulau Ngurtafur Hidden Paradise",
+    "id": "pulau-padar-golden-viewpoint",
+    "title": "Pulau Padar Golden Viewpoint",
     "category": "nusantara",
     "viral": true,
     "vibeTags": ["adventure", "content"],
     "dateStart": "2026-09-12",
     "dateEnd": "2026-09-14",
     "durationLabel": "3D2N",
-    "price": 3500000,
-    "priceExcludes": "Tidak termasuk tiket pesawat PP ke Langgur/Tual",
+    "price": 3200000,
+    "priceExcludes": "Tidak termasuk tiket pesawat PP ke Labuan Bajo",
     "slotFilled": 5,
     "slotTotal": 10,
     "images": [
-      "https://images.pexels.com/photos/37208430/pexels-photo-37208430.jpeg",
-      "https://images.pexels.com/photos/27215736/pexels-photo-27215736.jpeg"
+      "https://images.pexels.com/photos/28535883/pexels-photo-28535883.jpeg",
+      "https://images.pexels.com/photos/7067089/pexels-photo-7067089.jpeg"
     ],
     "addons": ["drone"]
   },
   {
-    "id": "danau-kakaban-derawan",
-    "title": "Danau Kakaban & Kepulauan Derawan",
+    "id": "kawah-putih-ciwidey",
+    "title": "Kawah Putih Ciwidey Turquoise Trip",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["adventure", "chill"],
-    "dateStart": "2026-09-19",
-    "dateEnd": "2026-09-21",
-    "durationLabel": "3D2N",
-    "price": 2800000,
-    "priceExcludes": "Tidak termasuk tiket pesawat PP ke Berau",
-    "slotFilled": 3,
-    "slotTotal": 12,
+    "vibeTags": ["chill", "content"],
+    "dateStart": "2026-10-03",
+    "dateEnd": "2026-10-03",
+    "durationLabel": "1D",
+    "price": 380000,
+    "priceExcludes": "Tidak termasuk transport pribadi ke meeting point Bandung",
+    "slotFilled": 8,
+    "slotTotal": 20,
     "images": [
-      "https://images.pexels.com/photos/30348743/pexels-photo-30348743.jpeg",
-      "https://images.pexels.com/photos/32277150/pexels-photo-32277150.jpeg"
+      "https://images.pexels.com/photos/30028410/pexels-photo-30028410.jpeg",
+      "https://images.pexels.com/photos/35083712/pexels-photo-35083712.jpeg"
     ],
-    "addons": ["drone", "fotografer"]
+    "addons": ["fotografer"]
   },
   {
     "id": "taman-nasional-baluran-savana",
