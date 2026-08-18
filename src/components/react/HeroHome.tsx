@@ -51,8 +51,10 @@ export default function HeroHome() {
         className="overflow-hidden rounded-card"
       >
         <img
-          src="https://images.pexels.com/photos/38421126/pexels-photo-38421126.jpeg"
+          src="https://images.pexels.com/photos/38421126/pexels-photo-38421126.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1080&fit=crop"
           alt="Grup traveler Kawan Jalan tertawa bersama di puncak gunung saat golden hour"
+          width={1200}
+          height={1080}
           className="aspect-[10/9] w-full object-cover"
           loading="eager"
         />

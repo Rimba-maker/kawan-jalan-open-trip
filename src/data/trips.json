@@ -4,7 +4,10 @@
     "title": "Bromo Ijen Sunrise Hunter",
     "category": "nusantara",
     "viral": false,
-    "vibeTags": ["adventure", "content"],
+    "vibeTags": [
+      "adventure",
+      "content"
+    ],
     "dateStart": "2026-08-15",
     "dateEnd": "2026-08-17",
     "durationLabel": "3D2N",
@@ -13,17 +16,23 @@
     "slotFilled": 4,
     "slotTotal": 15,
     "images": [
-      "https://images.pexels.com/photos/38262907/pexels-photo-38262907.jpeg",
-      "https://images.pexels.com/photos/38132000/pexels-photo-38132000.jpeg"
+      "https://images.pexels.com/photos/38262907/pexels-photo-38262907.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/38132000/pexels-photo-38132000.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer"]
+    "addons": [
+      "fotografer"
+    ]
   },
   {
     "id": "labuan-bajo-sailing-trip",
     "title": "Labuan Bajo Sailing Trip",
     "category": "nusantara",
     "viral": false,
-    "vibeTags": ["chill", "adventure", "content"],
+    "vibeTags": [
+      "chill",
+      "adventure",
+      "content"
+    ],
     "dateStart": "2026-08-22",
     "dateEnd": "2026-08-25",
     "durationLabel": "4D3N",
@@ -32,17 +41,23 @@
     "slotFilled": 8,
     "slotTotal": 12,
     "images": [
-      "https://images.pexels.com/photos/35823227/pexels-photo-35823227.jpeg",
-      "https://images.pexels.com/photos/18340434/pexels-photo-18340434.jpeg"
+      "https://images.pexels.com/photos/35823227/pexels-photo-35823227.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/18340434/pexels-photo-18340434.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["drone", "fotografer"]
+    "addons": [
+      "drone",
+      "fotografer"
+    ]
   },
   {
     "id": "dieng-golden-sunrise",
     "title": "Dieng Golden Sunrise",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["chill", "content"],
+    "vibeTags": [
+      "chill",
+      "content"
+    ],
     "dateStart": "2026-08-29",
     "dateEnd": "2026-08-30",
     "durationLabel": "2D1N",
@@ -51,17 +66,24 @@
     "slotFilled": 2,
     "slotTotal": 15,
     "images": [
-      "https://images.pexels.com/photos/37649297/pexels-photo-37649297.jpeg",
-      "https://images.pexels.com/photos/6819360/pexels-photo-6819360.jpeg"
+      "https://images.pexels.com/photos/37649297/pexels-photo-37649297.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/6819360/pexels-photo-6819360.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer", "same-day-edit"]
+    "addons": [
+      "fotografer",
+      "same-day-edit"
+    ]
   },
   {
     "id": "nusa-penida-island-hopping",
     "title": "Nusa Penida Island Hopping",
     "category": "nusantara",
     "viral": false,
-    "vibeTags": ["adventure", "content", "party"],
+    "vibeTags": [
+      "adventure",
+      "content",
+      "party"
+    ],
     "dateStart": "2026-09-05",
     "dateEnd": "2026-09-07",
     "durationLabel": "3D2N",
@@ -70,17 +92,23 @@
     "slotFilled": 10,
     "slotTotal": 15,
     "images": [
-      "https://images.pexels.com/photos/6407829/pexels-photo-6407829.jpeg",
-      "https://images.pexels.com/photos/19160408/pexels-photo-19160408.jpeg"
+      "https://images.pexels.com/photos/6407829/pexels-photo-6407829.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/19160408/pexels-photo-19160408.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["drone", "fotografer"]
+    "addons": [
+      "drone",
+      "fotografer"
+    ]
   },
   {
     "id": "svargabumi-borobudur-golden-hour",
     "title": "Svargabumi Borobudur Golden Hour",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["chill", "content"],
+    "vibeTags": [
+      "chill",
+      "content"
+    ],
     "dateStart": "2026-09-06",
     "dateEnd": "2026-09-06",
     "durationLabel": "1D",
@@ -89,17 +117,23 @@
     "slotFilled": 6,
     "slotTotal": 20,
     "images": [
-      "https://images.pexels.com/photos/34034317/pexels-photo-34034317.jpeg",
-      "https://images.pexels.com/photos/35632238/pexels-photo-35632238/free-photo-of-woman-on-swing-over-lush-rice-terraces-in-java.jpeg"
+      "https://images.pexels.com/photos/34034317/pexels-photo-34034317.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/35632238/pexels-photo-35632238/free-photo-of-woman-on-swing-over-lush-rice-terraces-in-java.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer", "same-day-edit"]
+    "addons": [
+      "fotografer",
+      "same-day-edit"
+    ]
   },
   {
     "id": "pulau-padar-golden-viewpoint",
     "title": "Pulau Padar Golden Viewpoint",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["adventure", "content"],
+    "vibeTags": [
+      "adventure",
+      "content"
+    ],
     "dateStart": "2026-09-12",
     "dateEnd": "2026-09-14",
     "durationLabel": "3D2N",
@@ -108,17 +142,22 @@
     "slotFilled": 5,
     "slotTotal": 10,
     "images": [
-      "https://images.pexels.com/photos/28535883/pexels-photo-28535883.jpeg",
-      "https://images.pexels.com/photos/7067089/pexels-photo-7067089.jpeg"
+      "https://images.pexels.com/photos/28535883/pexels-photo-28535883.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/7067089/pexels-photo-7067089.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["drone"]
+    "addons": [
+      "drone"
+    ]
   },
   {
     "id": "kawah-putih-ciwidey",
     "title": "Kawah Putih Ciwidey Turquoise Trip",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["chill", "content"],
+    "vibeTags": [
+      "chill",
+      "content"
+    ],
     "dateStart": "2026-10-03",
     "dateEnd": "2026-10-03",
     "durationLabel": "1D",
@@ -127,17 +166,23 @@
     "slotFilled": 8,
     "slotTotal": 20,
     "images": [
-      "https://images.pexels.com/photos/30028410/pexels-photo-30028410.jpeg",
-      "https://images.pexels.com/photos/35083712/pexels-photo-35083712.jpeg"
+      "https://images.pexels.com/photos/30028410/pexels-photo-30028410.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/35083712/pexels-photo-35083712.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer"]
+    "addons": [
+      "fotografer"
+    ]
   },
   {
     "id": "taman-nasional-baluran-savana",
     "title": "Taman Nasional Baluran Savana Safari",
     "category": "nusantara",
     "viral": true,
-    "vibeTags": ["adventure", "family", "content"],
+    "vibeTags": [
+      "adventure",
+      "family",
+      "content"
+    ],
     "dateStart": "2026-09-26",
     "dateEnd": "2026-09-27",
     "durationLabel": "2D1N",
@@ -146,17 +191,22 @@
     "slotFilled": 7,
     "slotTotal": 15,
     "images": [
-      "https://images.pexels.com/photos/38703956/pexels-photo-38703956.jpeg",
-      "https://images.pexels.com/photos/38935435/pexels-photo-38935435.jpeg"
+      "https://images.pexels.com/photos/38703956/pexels-photo-38703956.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/38935435/pexels-photo-38935435.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer"]
+    "addons": [
+      "fotografer"
+    ]
   },
   {
     "id": "malaysia-city-escape",
     "title": "Malaysia City Escape - Kuala Lumpur & Genting",
     "category": "global",
     "viral": false,
-    "vibeTags": ["content", "family"],
+    "vibeTags": [
+      "content",
+      "family"
+    ],
     "dateStart": "2026-10-10",
     "dateEnd": "2026-10-12",
     "durationLabel": "3D2N",
@@ -165,17 +215,23 @@
     "slotFilled": 9,
     "slotTotal": 15,
     "images": [
-      "https://images.pexels.com/photos/5396577/pexels-photo-5396577.jpeg",
-      "https://images.pexels.com/photos/18122071/pexels-photo-18122071.jpeg"
+      "https://images.pexels.com/photos/5396577/pexels-photo-5396577.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/18122071/pexels-photo-18122071.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["fotografer"]
+    "addons": [
+      "fotografer"
+    ]
   },
   {
     "id": "vietnam-ha-long-bay-cruise",
     "title": "Vietnam Ha Long Bay Cruise",
     "category": "global",
     "viral": false,
-    "vibeTags": ["chill", "adventure", "content"],
+    "vibeTags": [
+      "chill",
+      "adventure",
+      "content"
+    ],
     "dateStart": "2026-10-17",
     "dateEnd": "2026-10-20",
     "durationLabel": "4D3N",
@@ -184,17 +240,24 @@
     "slotFilled": 6,
     "slotTotal": 12,
     "images": [
-      "https://images.pexels.com/photos/5531543/pexels-photo-5531543.jpeg",
-      "https://images.pexels.com/photos/38116420/pexels-photo-38116420.jpeg"
+      "https://images.pexels.com/photos/5531543/pexels-photo-5531543.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/38116420/pexels-photo-38116420.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["drone", "fotografer"]
+    "addons": [
+      "drone",
+      "fotografer"
+    ]
   },
   {
     "id": "jepang-tokyo-kyoto-fuji",
     "title": "Jepang Tokyo-Kyoto-Fuji Explorer",
     "category": "global",
     "viral": false,
-    "vibeTags": ["content", "chill", "family"],
+    "vibeTags": [
+      "content",
+      "chill",
+      "family"
+    ],
     "dateStart": "2026-11-02",
     "dateEnd": "2026-11-07",
     "durationLabel": "6D5N",
@@ -203,9 +266,13 @@
     "slotFilled": 4,
     "slotTotal": 10,
     "images": [
-      "https://images.pexels.com/photos/35827257/pexels-photo-35827257.jpeg",
-      "https://images.pexels.com/photos/32416035/pexels-photo-32416035.jpeg"
+      "https://images.pexels.com/photos/35827257/pexels-photo-35827257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/32416035/pexels-photo-32416035.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
     ],
-    "addons": ["drone", "fotografer", "same-day-edit"]
+    "addons": [
+      "drone",
+      "fotografer",
+      "same-day-edit"
+    ]
   }
 ]

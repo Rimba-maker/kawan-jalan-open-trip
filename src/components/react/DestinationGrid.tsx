@@ -25,6 +25,8 @@ export default function DestinationGrid({ heading, destinations }: { heading: st
             <img
               src={d.image}
               alt={d.name}
+              width={600}
+              height={600}
               className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />

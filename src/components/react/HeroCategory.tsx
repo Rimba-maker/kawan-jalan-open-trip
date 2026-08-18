@@ -62,7 +62,14 @@ export default function HeroCategory({ headline, subtext, heroImage, heroImageAl
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="overflow-hidden rounded-card"
       >
-        <img src={heroImage} alt={heroImageAlt} className="aspect-[10/9] w-full object-cover" loading="eager" />
+        <img
+          src={heroImage}
+          alt={heroImageAlt}
+          width={1200}
+          height={1080}
+          className="aspect-[10/9] w-full object-cover"
+          loading="eager"
+        />
       </motion.div>
     </section>
   );

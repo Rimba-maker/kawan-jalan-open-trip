@@ -15,6 +15,8 @@ export default function TripCard({ trip }: { trip: Trip }) {
         <img
           src={trip.images[0]}
           alt={trip.title}
+          width={800}
+          height={600}
           className="aspect-[4/3] w-full object-cover"
           loading="lazy"
         />

@@ -7,7 +7,7 @@ const CARDS = [
     title: "Open Trip Nusantara",
     body: "Bromo, Labuan Bajo, sampai spot yang lagi viral di TikTok. Semua di Indonesia, semua deket dari rumah.",
     cta: "Cek Trip Nusantara",
-    image: "https://images.pexels.com/photos/29231588/pexels-photo-29231588.jpeg",
+    image: "https://images.pexels.com/photos/29231588/pexels-photo-29231588.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop",
     alt: "Grup traveler berdiri di tepi kawah Bromo saat sunrise",
   },
   {
@@ -16,7 +16,7 @@ const CARDS = [
     title: "Open Trip Global",
     body: "Jepang, Vietnam, Malaysia. Liburan ke luar negeri nggak perlu ribet urus sendiri, apalagi sendirian.",
     cta: "Cek Trip Global",
-    image: "https://images.pexels.com/photos/36092385/pexels-photo-36092385.jpeg",
+    image: "https://images.pexels.com/photos/36092385/pexels-photo-36092385.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop",
     alt: "Grup traveler berjalan di persimpangan kota Tokyo pada malam hari",
   },
 ];
@@ -46,6 +46,8 @@ export default function CategoryPicker() {
               <img
                 src={card.image}
                 alt={card.alt}
+                width={1200}
+                height={900}
                 className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
