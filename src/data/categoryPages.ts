@@ -1,7 +1,7 @@
 import type { TripCategory } from "../lib/tags";
 import type { Destination } from "../components/react/DestinationGrid";
 
-export interface CategoryPageContent {
+interface CategoryPageContent {
   seo: { title: string; description: string; keywords: string; ogImageAlt: string };
   hero: { headline: string; subtext: string; heroImage: string; heroImageAlt: string };
   destinationsHeading: string;

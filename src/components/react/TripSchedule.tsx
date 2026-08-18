@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import type { Trip } from "../../lib/types";
+import type { Trip } from "../../content.config";
 import TripCard from "./TripCard";
 
 export default function TripSchedule({ trips, category }: { trips: Trip[]; category: "nusantara" | "global" }) {

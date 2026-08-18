@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Flame } from "@phosphor-icons/react";
-import type { Trip } from "../../lib/types";
+import type { Trip } from "../../content.config";
 import { VIBE_META } from "../../lib/constants";
 import { formatIDR, formatDateRange } from "../../lib/format";
 

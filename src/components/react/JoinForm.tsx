@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import type { Trip } from "../../lib/types";
+import type { Trip } from "../../content.config";
 
 export default function JoinForm({ trips }: { trips: Trip[] }) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
