@@ -6,12 +6,9 @@
   /* Wise-derived brand tokens (see DESIGN.md) */
   --color-primary: #9fe870;
   --color-on-primary: #0e0f0c;
-  --color-primary-active: #cdffad;
-  --color-primary-neutral: #c5edab;
   --color-primary-pale: #e2f6d5;
 
   --color-ink: #0e0f0c;
-  --color-ink-deep: #163300;
   --color-body: #454745;
   --color-mute: #868685;
 
@@ -19,12 +16,8 @@
   --color-canvas-soft: #e8ebe6;
 
   --color-positive: #2ead4b;
-  --color-positive-deep: #054d28;
-  --color-warning: #ffd11a;
-  --color-warning-deep: #b86700;
   --color-negative: #d03238;
   --color-negative-deep: #a72027;
-  --color-negative-bg: #320707;
 
   /* Vibe Matching accents (project-specific, tags/badges only) */
   --color-vibe-chill: #8ba888;

@@ -1,7 +1,4 @@
-const BULAN = [
-  "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-  "Juli", "Agustus", "September", "Oktober", "November", "Desember",
-];
+const monthName = (d: Date) => new Intl.DateTimeFormat("id-ID", { month: "long" }).format(d);
 
 export function formatIDR(price: number): string {
   return `Rp ${price.toLocaleString("id-ID")}`;
@@ -14,14 +11,10 @@ export function formatDateRange(startISO: string, endISO: string): string {
   const sameDay = startISO === endISO;
 
   if (sameDay) {
-    return `${start.getDate()} ${BULAN[start.getMonth()]} ${start.getFullYear()}`;
+    return `${start.getDate()} ${monthName(start)} ${start.getFullYear()}`;
   }
   if (sameMonth) {
-    return `${start.getDate()}-${end.getDate()} ${BULAN[start.getMonth()]} ${start.getFullYear()}`;
+    return `${start.getDate()}-${end.getDate()} ${monthName(start)} ${start.getFullYear()}`;
   }
-  return `${start.getDate()} ${BULAN[start.getMonth()]} - ${end.getDate()} ${BULAN[end.getMonth()]} ${end.getFullYear()}`;
-}
-
-export function slotPercent(filled: number, total: number): number {
-  return Math.round((filled / total) * 100);
+  return `${start.getDate()} ${monthName(start)} - ${end.getDate()} ${monthName(end)} ${end.getFullYear()}`;
 }

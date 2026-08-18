@@ -11,16 +11,3 @@ export const ADDON_META = {
   fotografer: { label: "Fotografer dedicated", price: "+Rp 200k/orang" },
   "same-day-edit": { label: "Same-day edit reel", price: "+Rp 100k/orang" },
 } as const;
-
-export const CATEGORY_META = {
-  nusantara: {
-    label: "Nusantara",
-    color: "var(--color-category-nusantara)",
-    path: "/nusantara",
-  },
-  global: {
-    label: "Global",
-    color: "var(--color-category-global)",
-    path: "/global",
-  },
-} as const;

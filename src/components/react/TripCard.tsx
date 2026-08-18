@@ -1,11 +1,11 @@
 import { motion, useReducedMotion } from "framer-motion";
 import type { Trip } from "../../lib/types";
 import { VIBE_META } from "../../lib/constants";
-import { formatIDR, formatDateRange, slotPercent } from "../../lib/format";
+import { formatIDR, formatDateRange } from "../../lib/format";
 
 export default function TripCard({ trip }: { trip: Trip }) {
   const reduce = useReducedMotion();
-  const percent = slotPercent(trip.slotFilled, trip.slotTotal);
+  const percent = Math.round((trip.slotFilled / trip.slotTotal) * 100);
   const slotsLeft = trip.slotTotal - trip.slotFilled;
   const urgent = slotsLeft <= 3;
 

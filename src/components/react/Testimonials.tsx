@@ -1,4 +1,4 @@
-import Reveal from "./Reveal";
+import { motion, useReducedMotion } from "framer-motion";
 
 const QUOTES = [
   {
@@ -22,6 +22,8 @@ const QUOTES = [
 ];
 
 export default function Testimonials() {
+  const reduce = useReducedMotion();
+
   return (
     <section id="cerita-trip" className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
       <h2 className="font-display text-2xl font-extrabold tracking-tight text-ink md:text-3xl">
@@ -30,7 +32,14 @@ export default function Testimonials() {
 
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {QUOTES.map((q, i) => (
-          <Reveal key={q.name} index={i} className="rounded-card bg-canvas p-6 shadow-sm">
+          <motion.div
+            key={q.name}
+            initial={reduce ? false : { opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
+            className="rounded-card bg-canvas p-6 shadow-sm"
+          >
             <img
               src={q.image}
               alt={`Foto ${q.name} saat ${q.trip}`}
@@ -44,7 +53,7 @@ export default function Testimonials() {
               {q.name}
               <span className="block font-normal text-mute">{q.trip}</span>
             </p>
-          </Reveal>
+          </motion.div>
         ))}
       </div>
     </section>
